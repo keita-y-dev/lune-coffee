@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUNE COFFEE</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -12,7 +12,14 @@
 <body>
     <header class="header">
         <h1>LUNE COFFEE</h1>
-        <nav>
+
+        <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav">
             <ul>
                 <li><a href="#concept">CONCEPT</a></li>
                 <li><a href="#menu">MENU</a></li>
@@ -24,170 +31,171 @@
     </header>
 
     <main>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h2>日常に、少しだけ特別な一杯を</h2>
-            <a href="#access">店舗情報を見る</a>
-        </div>
-    </section>
-
-    <section id="concept" class="concept">
-        <div class="fade-in">
-            <h2>CONCEPT</h2>
-            <h3>一日の終わりを、少しだけ特別に</h3>
-            <p>落ち着いた照明と静かな音楽が流れる空間で、<br>
-                こだわりのコーヒーやスイーツ、お酒を楽しめる夜カフェ。<br>
-                仕事帰りや大切な人との時間を<br>
-                ゆったり過ごせる場所を提供します。</p>
-        </div>
-    </section>
-
-    <section id="menu" class="menu">
-
-        <div class="menu-block coffee">
-            <div class="fade-in">
-                <h2 class="section-title">COFFEE</h2>
-                <div class="menu-container">   
-                    <div class="card">
-                        <img src="images/menu-1.png" alt="エスプレッソの画像">
-                        <h3>エスプレッソ</h3>
-                        <p>深いコクと豊かな香りを楽しめる、コーヒー本来の味わい。</p>
-                        <span>550 YEN</span>
-                    </div>
-                    <div class="card">
-                        <img src="images/menu-2.png" alt="カフェオレの画像">
-                        <h3>カフェオレ</h3>
-                        <p>エスプレッソミルクを合わせた、まろやかで優しい一杯。</p>
-                        <span>680 YEN</span>
-                    </div>
-                    <div class="card">
-                        <img src="images/menu-3.png" alt="カプチーノの画像">
-                        <h3>カプチーノ</h3>
-                        <p>きめ細かな泡と濃厚な香りが広がる、贅沢な味わい。</p>
-                        <span>720 YEN</span>
-                    </div>
-                </div>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>日常に、少しだけ特別な一杯を</h2>
+                <a href="#access">店舗情報を見る</a>
             </div>
-        </div>
-
-        <div class="menu-block alcohol">
-            <div class="fade-in">
-                <h2 class="section-title">ALCOHOL</h2>
-                <div class="menu-container">  
-                    <div class="card">
-                        <img src="images/menu-4.png" alt="アイリッシュコーヒーの画像">
-                        <h3>アイリッシュコーヒー</h3>
-                        <p>ホットコーヒーにウイスキーを加えた、大人の定番カクテル。</p>
-                        <span>850 YEN</span>
-                    </div>
-                    <div class="card">
-                        <img src="images/menu-5.png" alt="赤ワインの画像">
-                        <h3>赤ワイン</h3>
-                        <p>ゆったりとした夜の時間に寄り添う、落ち着いた味わい。</p>
-                        <span>900 YEN</span>
-                    </div>
-                    <div class="card">
-                        <img src="images/menu-6.png" alt="ジントニックの画像">
-                        <h3>ジントニック</h3>
-                        <p>さわやかな香りとすっきりした後味が人気の一杯。</p>
-                        <span>800 YEN</span>
-                    </div>
-                </div>
-            </div>
-        </div>
         </section>
 
-    <section id="gallery" class="gallery">
-        <div class="fade-in">
-            <h2>GALLERY</h2>
-            <div class="gallery-grid">
-                <img class="galleryimg-1 fade-in" src="images/gallery-1.jpg" alt="店内の様子">
-                <img class="galleryimg-2 fade-in" src="images/gallery-2.jpg" alt="コーヒー">
-                <img class="galleryimg-3 fade-in" src="images/gallery-3.jpg" alt="夜カフェの店内">
-                <img class="galleryimg-4 fade-in" src="images/gallery-4.jpg" alt="アルコールメニュー">
-                <img class="galleryimg-5 fade-in" src="images/gallery-5.jpg" alt="デザート">
+        <section id="concept" class="concept">
+            <div class="fade-in">
+                <h2>CONCEPT</h2>
+                <h3>一日の終わりを、少しだけ特別に</h3>
+                <p>落ち着いた照明と静かな音楽が流れる空間で、<br>
+                    こだわりのコーヒーやスイーツ、お酒を楽しめる夜カフェ。<br>
+                    仕事帰りや大切な人との時間を<br>
+                    ゆったり過ごせる場所を提供します。</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="access" class="access">
-        <div class="fade-in">
-            <h2>ACCESS</h2>
-            <div class="access-wrapper">
-                <div class="access-map">
-                    <iframe
-                        title="LUNE COFFEE周辺の地図"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.1606834089325!2d130.82551230990114!3d31.382132653853787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e91749c2bc155%3A0x5a1faa07304705a!2z6KW_5Y6fUEPjgrnjgq_jg7zjg6s!5e0!3m2!1sja!2sjp!4v1783147803828!5m2!1sja!2sjp"
-                        width="100%"
-                        height="100%"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy">
-                    </iframe>                
+        <section id="menu" class="menu">
+            <div class="menu-inner fade-in">
+                <h2 class="menu-heading">MENU</h2>
+
+                <div class="menu-tabs" role="tablist" aria-label="メニューカテゴリー">
+                    <button class="menu-tab active" type="button" role="tab"
+                            aria-selected="true" aria-controls="coffee-panel" data-tab="coffee">
+                        COFFEE
+                    </button>
+                    <button class="menu-tab" type="button" role="tab"
+                            aria-selected="false" aria-controls="alcohol-panel" data-tab="alcohol">
+                        ALCOHOL
+                    </button>
                 </div>
-                <div class="access-info">
-                    <ul>
-                        <li>
-                            <img src="images/icon-phone.svg" alt="">
-                            <a href="tel:012345678">01-2345-678</a>
-                        </li>
-                        <li>
-                            <img src="images/icon-email.svg" alt="">
-                            <a href="mailto:hello@lunecoffee.example">hello@lunecoffee.example</a>
-                        </li>
-                        <li>
-                            <img src="images/icon-web.svg" alt="">
-                            <a href="https://keita-y.com/works/lune-coffee/">https://keita-y.com/works/lune-coffee</a>
-                        </li>
-                        <li>
-                            <img src="images/icon-clock.svg" alt="">
-                            <time datetime="18:00">18:00</time>
-                            〜
-                            <time datetime="00:00">24:00</time>
-                        </li>
-                        <li>
-                            <img src="images/icon-map.svg" alt="">〒123-4567 〇〇市大通り 1丁目2-3
 
-                        </li>
-                    </ul>
-                    
-                    
-                    
-                    
-                    
+                <div id="coffee-panel" class="menu-panel active" role="tabpanel">
+                    <div class="menu-container">
+                        <div class="card">
+                            <img src="images/menu-1.png" alt="エスプレッソの画像">
+                            <h3>エスプレッソ</h3>
+                            <p>深いコクと豊かな香りを楽しめる、コーヒー本来の味わい。</p>
+                            <span>550 YEN</span>
+                        </div>
+                        <div class="card">
+                            <img src="images/menu-2.png" alt="カフェオレの画像">
+                            <h3>カフェオレ</h3>
+                            <p>エスプレッソミルクを合わせた、まろやかで優しい一杯。</p>
+                            <span>680 YEN</span>
+                        </div>
+                        <div class="card">
+                            <img src="images/menu-3.png" alt="カプチーノの画像">
+                            <h3>カプチーノ</h3>
+                            <p>きめ細かな泡と濃厚な香りが広がる、贅沢な味わい。</p>
+                            <span>720 YEN</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="instagram" class="instagram">
-        <div class="fade-in">
-            <h2>Instagram</h2>
-            <p class="instagram-text">
-                最新メニューや夜カフェの雰囲気を発信しています。<br>
-                ご予約前に、ぜひお店の空気感をご覧ください。
-            </p>
-            <div class="instagram-wrapper">
-                <a href="https://www.instagram.com" class="instagram-card">
-                    <img src="images/instagram-icon.png" alt="Instagramアイコン">
-                    <span>Instagramを見る</span>
-                </a>
-                <div class="instagram-card">
-                    <img src="images/qr-code.png" alt="QRコード">
-                    <span>QRコードで見る</span>
+                <div id="alcohol-panel" class="menu-panel" role="tabpanel" hidden>
+                    <div class="menu-container">
+                        <div class="card">
+                            <img src="images/menu-4.png" alt="アイリッシュコーヒーの画像">
+                            <h3>アイリッシュコーヒー</h3>
+                            <p>ホットコーヒーにウイスキーを加えた、大人の定番カクテル。</p>
+                            <span>850 YEN</span>
+                        </div>
+                        <div class="card">
+                            <img src="images/menu-5.png" alt="赤ワインの画像">
+                            <h3>赤ワイン</h3>
+                            <p>ゆったりとした夜の時間に寄り添う、落ち着いた味わい。</p>
+                            <span>900 YEN</span>
+                        </div>
+                        <div class="card">
+                            <img src="images/menu-6.png" alt="ジントニックの画像">
+                            <h3>ジントニック</h3>
+                            <p>さわやかな香りとすっきりした後味が人気の一杯。</p>
+                            <span>800 YEN</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section id="gallery" class="gallery">
+            <div class="fade-in">
+                <h2>GALLERY</h2>
+                <div class="gallery-grid">
+                    <button class="gallery-item galleryimg-1" type="button">
+                        <img src="images/gallery-1.jpg" alt="店内の様子">
+                    </button>
+                    <button class="gallery-item galleryimg-2" type="button">
+                        <img src="images/gallery-2.jpg" alt="コーヒー">
+                    </button>
+                    <button class="gallery-item galleryimg-3" type="button">
+                        <img src="images/gallery-3.jpg" alt="夜カフェの店内">
+                    </button>
+                    <button class="gallery-item galleryimg-4" type="button">
+                        <img src="images/gallery-4.jpg" alt="アルコールメニュー">
+                    </button>
+                    <button class="gallery-item galleryimg-5" type="button">
+                        <img src="images/gallery-5.jpg" alt="デザート">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="gallery-modal" aria-hidden="true">
+            <div class="modal-overlay"></div>
+            <div class="modal-content" role="dialog" aria-modal="true" aria-label="ギャラリー画像">
+                <button class="modal-close" type="button" aria-label="画像を閉じる">&times;</button>
+                <img class="modal-image" src="" alt="">
+            </div>
+        </div>
+
+        <section id="access" class="access">
+            <div class="fade-in">
+                <h2>ACCESS</h2>
+                <div class="access-wrapper">
+                    <div class="access-map">
+                        <iframe
+                            title="LUNE COFFEE周辺の地図"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.1606834089325!2d130.82551230990114!3d31.382132653853787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e91749c2bc155%3A0x5a1faa07304705a!2z6KW_5Y6fUEPjgrnjgq_jg7zjg6s!5e0!3m2!1sja!2sjp!4v1783147803828!5m2!1sja!2sjp"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="access-info">
+                        <ul>
+                            <li><img src="images/icon-phone.svg" alt=""><a href="tel:012345678">01-2345-678</a></li>
+                            <li><img src="images/icon-email.svg" alt=""><a href="mailto:hello@lunecoffee.example">hello@lunecoffee.example</a></li>
+                            <li><img src="images/icon-web.svg" alt=""><a href="https://keita-y.com/works/lune-coffee/">https://keita-y.com/works/lune-coffee</a></li>
+                            <li><img src="images/icon-clock.svg" alt=""><time datetime="18:00">18:00</time> 〜 <time datetime="00:00">24:00</time></li>
+                            <li><img src="images/icon-map.svg" alt="">〒123-4567 〇〇市大通り 1丁目2-3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instagram" class="instagram">
+            <div class="fade-in">
+                <h2>Instagram</h2>
+                <p class="instagram-text">
+                    最新メニューや夜カフェの雰囲気を発信しています。<br>
+                    ご予約前に、ぜひお店の空気感をご覧ください。
+                </p>
+                <div class="instagram-wrapper">
+                    <a href="https://www.instagram.com" class="instagram-card">
+                        <img src="images/instagram-icon.png" alt="Instagramアイコン">
+                        <span>Instagramを見る</span>
+                    </a>
+                    <div class="instagram-card">
+                        <img src="images/qr-code.png" alt="QRコード">
+                        <span>QRコードで見る</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <button class="to-top" type="button" aria-label="トップへ戻る">↑</button>
 
     <footer class="footer">
         <h2>LUNE COFFEE</h2>
         <p>日常に、少しだけ特別な一杯を</p>
         <small>© 2026 LUNE COFFEE</small>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
