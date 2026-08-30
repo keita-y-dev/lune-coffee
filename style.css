@@ -552,13 +552,18 @@ body.modal-open {
     transform: translateY(0);
 }
 
-@media (max-width: 768px) {
+/* =========================
+   Tablet Header
+========================= */
+
+@media (max-width: 960px) {
+
     .header {
-        padding: 15px 20px;
+        padding: 14px 24px;
     }
 
     .header h1 {
-        width: 145px;
+        width: 150px;
     }
 
     .hamburger {
@@ -570,8 +575,9 @@ body.modal-open {
         top: 100%;
         right: 0;
         width: 100%;
-        padding: 20px;
+        padding: 20px 24px;
         background: rgba(18, 18, 18, .96);
+
         opacity: 0;
         visibility: hidden;
         transform: translateY(-10px);
@@ -585,7 +591,6 @@ body.modal-open {
     }
 
     .header ul {
-        display: flex;
         flex-direction: column;
         align-items: stretch;
         gap: 0;
@@ -621,6 +626,9 @@ body.modal-open {
     .hamburger.active span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
+}
+
+@media (max-width: 768px) {
 
     .hero h2 {
         font-size: 30px;
